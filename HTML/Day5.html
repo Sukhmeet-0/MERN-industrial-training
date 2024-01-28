@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day5</title>
+</head>
+<body>
+    <form action="">
+        <label for="fullname">Enter your name</label>
+        <input type="text" placeholder="enter name" id="fullname">
+        
+        <br>
+
+        <label for="pass">Enter your password</label>
+        <input  id="pass" type="password" placeholder="enter password">
+
+        <br>
+
+        <label for="mail">Enter email</label>
+        <input type="email" name="" id="mail" placeholder="enter email">
+
+        <br>
+
+        <label for="dob">DOB</label>
+        <input type="date" name="" id="dob">
+
+        <br>
+
+        <label for="time">Time</label>
+        <input type="time" name="" id="time">
+
+        <br>
+
+        <label for="gender">Gender: </label>
+        <br>
+        <label for="male">Male</label>
+        <input type="radio"  id="male" name="gender">
+        <label for="fmale">Female</label>
+        <input type="radio" name="gender" id="fmale">
+
+        <br>
+
+        <input type="checkbox" id="box">
+        <label for="box">I agree to the terms and services</label>
+
+        <br>
+
+        <label for="age">Age</label>
+        <input type="number" name="" id="age">
+
+        <br>
+
+        <label for="country">Country</label>
+        <select name="country" id="country">
+            <option value="">Please select your country</option>
+            <option value="India">India</option>
+            <option value="US">US</option>
+            <option value="Canada">Canada</option>
+        </select>
+
+        <br>
+
+
+        <textarea name="" id="" cols="30" rows="10"></textarea>
+
+        <br>
+
+        <input type="reset" value="Reset">
+        <input type="submit" >
+        <input type="button" value="Chalo krdo click" onclick="handleform()">
+    </form>
+    <script>
+        function handleform(){
+            let fullname = document.getElementById('fullname').value
+            console.log(fullname)
+        }
+    </script>
+</body>
+</html>
