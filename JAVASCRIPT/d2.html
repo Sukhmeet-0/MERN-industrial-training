@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        /*.backColor{*/
+        /*    color: yellow;*/
+        /*}*/
+        /*h1{*/
+        /*    background-color: black;*/
+        /*}*/
+
+    </style>
+</head>
+<body>
+    <div id="para"></div>
+    <button value="Click" onclick="paraText()">Click Me</button>
+    <button id="btn"> Event Listener</button>
+    <script>
+        document.getElementById('para').innerHTML='Hello world'
+        document.getElementById('para').innerHTML='<h1><b>Hello world</b></h1>'
+        document.getElementById('para').innerHTML='<b class="backColor"><h1> Hello world ki hal chal aaa </h1></b>'
+        document.getElementById('para').style.color='white'
+        document.getElementById('para').style.background='black'
+        document.getElementById('btn').addEventListener('click',function(){
+            document.getElementById('para').innerHTML='<h1> Event Listened</h1>'
+        })
+
+        function paraText(){
+            document.getElementById('para').innerHTML='<h1>Clicked</h1>'
+            document.getElementById('para').style.color='yellow'
+            document.getElementById('para').style.background='black'
+        }
+
+
+    </script>
+</body>
+</html>
