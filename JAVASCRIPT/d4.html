@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="/BOOTSTRAP/css/bootstrap.css">
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="mb-3">
+            <form action="">
+                <label for="name" class="my-2">Number1:</label>
+                <input type="text" id="name" class="form-control">
+                <label for="name2" class="my-2">Number2:</label>
+                <input type="text" id="name2" class="form-control">
+            </form>
+            <button class="btn btn-primary my-3" onclick="go()">Click Me</button>
+            <div id="result" class="form-control "></div>
+        </div>
+    </div>
+
+<script>
+    // var a=50;
+    // var b = 70;
+    // document.write(a+b)
+    // document.write(a-b)
+    // document.write(a/b)
+    // document.write(a*b)
+    // document.write(a%b)
+    function go(){
+        let a = document.getElementById('name').value
+        let b = document.getElementById('name2').value
+        a = parseInt(a);
+        b = parseInt(b);
+
+        if(isNaN(a) || isNaN(b)){
+            document.getElementById('result').innerHTML='Please enter numbers!!';
+            document.getElementById('result').style.color='red';
+        }else{
+            document.getElementById('result').innerHTML = String(a+b);
+        }
+
+
+        // document.getElementById('result').innerHTML = String(a<b);
+        // document.getElementById('result').innerHTML = String(a==b);
+        // document.getElementById('result').innerHTML = String(a<=b);
+        // document.getElementById('result').innerHTML = isNaN(a);
+    }
+
+</script>
+</body>
+</html>
