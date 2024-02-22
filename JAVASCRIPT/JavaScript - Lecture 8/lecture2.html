@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+        .backColor {
+            background-color: #0a3622;
+        }
+    </style>
+</head>
+<body>
+
+<p id="para"></p>
+<button type="button" id="btn">Call Function</button>
+
+<!--<img src="../icons/fb.jpg" alt="" id="image">-->
+
+<!--<button type="button" onclick="showIcon('fb.jpg')">Facebook</button>-->
+<!--<button type="button" onclick="showIcon('insta.jpg')">Insta</button>-->
+<!--<button type="button" onclick="showIcon('whatsapp.jpg')">WhatsApp</button>-->
+
+<script>
+    // Event Listener
+    document.getElementById("btn").addEventListener("click", function () {
+        // code
+        document.getElementById("para").innerHTML = "<b>hello world</b>"
+        document.getElementById("para").style.color = "#54dd54"
+    })
+
+    // function showIcon(fileName){
+    // console.log(fileName)
+    // console.log("../icons/" + fileName)
+    // document.getElementById("image").src = "../icons/" + fileName
+    // }
+
+    // function showFacebookIcon() {
+    //     document.getElementById("image").src = "../icons/fb.jpg"
+    // }
+
+    // function showInstaIcon() {
+    //     document.getElementById("image").src = "../icons/insta.jpg"
+    // }
+
+    // function showWhatsappIcon() {
+    //     document.getElementById("image").src = "../icons/whatsapp.jpg"
+    // }
+
+    function paraText() {
+        document.getElementById("para").innerText = "hello world"
+        document.getElementById("para").style.color = "red"
+        document.getElementById("para").style.fontWeight = "bold"
+    }
+
+    // paraText()
+
+    // console.log(document.getElementById("para"))
+    // document.getElementById("para").innerText = "hello world"
+    // document.getElementById("para").innerText = "<b>hello world</b>"
+    // document.getElementById("para").innerHTML = "<b>hello world</b>"
+    // document.getElementById("para").style.color = "#54dd54"
+    // document.getElementById("para").style.backgroundColor = "red"
+    // document.getElementById("para").innerHTML = ""
+    // document.getElementById("para").innerHTML = ''
+    // document.getElementById("para").innerHTML = '<b class="backColor" style="color: red">vsdvsfvvbsff bfdbfsb</b>'
+    // document.getElementById("para").innerHTML = "<b style=''>dvsfvf vsvsfvsfv</b>"
+    // document.getElementById("para").innerHTML = "hello world"
+</script>
+
+</body>
+</html>

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<div id="output"></div>
+
+<script>
+
+    var listHTML = "<ul>"
+    for (let i = 1; i <= 6; i++) {
+        // console.log(i)
+        // if (i % 2 == 0) {
+        //     listHTML += "<li style='color: green'>" + i + "</li>"
+        // } else {
+        //     listHTML += "<li style='color: red'>" + i + "</li>"
+        // }
+        // listHTML += "<li>i</li>"
+        // listHTML += "<li style='color: red'>" + i + "</li>"
+    }
+
+    // console.log("outside")
+    // console.log(i)
+
+    listHTML += "</ul>"
+    document.getElementById("output").innerHTML = listHTML;
+
+    // hello world * 5
+    // console.log("hello world")
+    // console.log("hello world")
+    // console.log("hello world")
+    // console.log("hello world")
+    // console.log("hello world")
+
+
+    // Loops
+    // Entry Controlled Loop
+    // Exit Controlled Loop
+    // 1. for
+    // 2. while
+    // 3. do-while
+    // Loops (collections / Array)
+    // 4. for-of
+    // 5. for-in
+    // 6. forEach
+
+    // for Loop
+    /*
+    * for (initialization; condition; increment/decrement) {
+    *   // code [repeat]
+    * }
+    * */
+
+    // 1 - initialization
+    // 2 - condition -> f
+    // 3 - code
+    // 4 - increment
+
+    /*
+    * i = 1
+    * i = 2
+    * i = 3
+    * i = 4
+    * i = 5
+    * i = 6 f
+    * */
+    // for(var i = 1; i <= 5; i++) {
+    // console.log("hello world.")
+    // console.log(i + "hello world.")
+    // }
+
+    // while loop
+    /*
+    * 1 initialization;
+    * while (2 condition) {
+    *  // 3 code
+    *  // 4 inc/dec
+    * }
+    * */
+    // var i = 1
+    // let i = 1
+    // while (i <= 10) {
+    //     console.log(i)
+    //     i++;
+    // }
+
+    // var name = "John"
+    // name = "Tony"
+
+    // let name = "John"
+    // name = "Tony"
+
+    // const name = "John"
+    // name = "Tony"
+    // console.log(name)
+
+    // do-while loop
+    /*
+    * initialization
+    * do {
+    *   // code
+    *   // inc/dec
+    * } while(condition)
+    * */
+
+    // let i = 1;
+    // let i = 6;
+    // do {
+    //     console.log(i + " hello world");
+    //     i++;
+    // } while (i <= 5)
+
+    // break
+    // for (let i = 1; i <= 10; i++) {
+    //     console.log(i)
+    //     if(i == 6) {
+    //         break;
+    //     }
+    // }
+
+    // continue
+    for (let i = 1; i <= 10; i++) {
+        if (i == 8) {
+            continue;
+        }
+        console.log(i)
+    }
+
+</script>
+
+</body>
+</html>
