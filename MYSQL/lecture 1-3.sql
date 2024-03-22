@@ -1,0 +1,16 @@
+show databases;
+create database training;
+use training;
+create table students(name varchar(50),rollno int,age int);
+insert into students values('Sukhmeet',469,22);
+select * from students;
+alter table students add column gender varchar(10);
+alter table students drop column gender;
+alter table students modify column rollno int;
+alter table students change  rollno roll_no varchar(10);
+rename table students to bache;
+drop table bache;
+truncate table students;
+insert into students values('abc',323,323),('lfsj',32,23),('asfd',232,234);
+delete from students where name='abc';
+update students set name='abc' where name='lfsj';
