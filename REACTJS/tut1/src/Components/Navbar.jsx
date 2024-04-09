@@ -12,7 +12,7 @@ let Navbar = () => {
                     <ul className="navbar-nav mr-auto">
                         <li className="nav-item active">
                             <Link className="nav-link" to="/">Home</Link>
-                        </li>
+                        </li>   
                         <li className="nav-item">
                             <Link className="nav-link" to="/contact">Contact</Link>
                         </li>

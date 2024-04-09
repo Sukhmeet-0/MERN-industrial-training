@@ -3,13 +3,13 @@ import Navbar from "../Components/Navbar"
 let Home = ()=>{
     return (
         <>
-            <div className="container">
+            <div className={"container"}>
                 <Navbar/>
-                <ul>
+                {/* <ul>
                     <li><a href="/">Home</a></li>
                     <li><a href="/about">About us</a></li>
                     <li><a href="/contact">Contact</a></li>
-                </ul>
+                </ul> */}
                 <h1>Home</h1>
             </div>
         </>

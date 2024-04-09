@@ -3,6 +3,13 @@ import {BrowserRouter, Routes,Route} from 'react-router-dom'
 import Home from './Pages/Home'
 import About from './Pages/About'
 import Contact from './Pages/Contact'
+import PageNotFound from './Pages/PageNotFound';
+import Dashboard from './Pages/Admin/Dashboard';
+import Profile from './Pages/Admin/Profile';
+
+import ChangePassword from './Pages/Customeres/ChangePassword';
+import CustomerDashboard from './Pages/Customeres/Dashboard';
+
 
 // import ComponentsB from "./ComponentsB";
 
@@ -40,6 +47,11 @@ function App() {
             <Route path={'/'} element={<Home/>}/>
             <Route path={'/about'} element={<About/>}/>
             <Route path={'/contact'} element={<Contact/>}/>
+            <Route path={'*'} element={<PageNotFound/>}/>
+            <Route path={'/admin'}>
+              <Route path={'dashboard'} element={<Dashboard/>}/>
+              <Route path={'profile'} element={<Profile/>}/>
+            </Route>
           </Routes>
         
         </BrowserRouter>
