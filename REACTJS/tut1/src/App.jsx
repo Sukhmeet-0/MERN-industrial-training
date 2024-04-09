@@ -1,18 +1,22 @@
 // import Cards from "./Cards";
+import {BrowserRouter, Routes,Route} from 'react-router-dom'
+import Home from './Pages/Home'
+import About from './Pages/About'
+import Contact from './Pages/Contact'
 
-import ComponentsB from "./ComponentsB";
+// import ComponentsB from "./ComponentsB";
 
 function App() {
-  let style = {
-    color: "yellow",
-    backgroundColor: "black",
-  };
-  function sum(){
-    return 10+20
-  }
+  // let style = {
+  //   color: "yellow",
+  //   backgroundColor: "black",
+  // };
+  // function sum(){
+  //   return 10+20
+  // }
   return (
     <>
-        <div className="container">
+        {/* /<div className="container">
           <span>Demo project</span>{" -> "}<span>Hello world</span>{" -> "}
           Output::{sum(10,50)}
           <h1 style={{ color: "red", backgroundColor: "green" }}>
@@ -28,25 +32,39 @@ function App() {
           <button type={"button"} className="btn-primary btn mx-2">Click me</button>
           <ComponentsB/>
           
-        </div>
+        </div> */}
+
+        <BrowserRouter>
+        
+          <Routes>
+            <Route path={'/'} element={<Home/>}/>
+            <Route path={'/about'} element={<About/>}/>
+            <Route path={'/contact'} element={<Contact/>}/>
+          </Routes>
+        
+        </BrowserRouter>
+
+
+
+
     </>
   );
 }
-let Cards=(props)=>{
-  return (
-      <>
-          {/* Output::{sum(10,50)} */}
-          <div className="col-lg-4">
-          <div className="card">
-              <div className="card-header  bg-primary"><h1>{props.title}, {props.age}</h1></div>
-              <div className="card-body">
-                  <p>{props.description} </p>
-              </div>
-          </div>
-          </div>
-      </>
-  )
-}
+// let Cards=(props)=>{
+//   return (
+//       <>
+//           {/* Output::{sum(10,50)} */}
+//           <div className="col-lg-4">
+//           <div className="card">
+//               <div className="card-header  bg-primary"><h1>{props.title}, {props.age}</h1></div>
+//               <div className="card-body">
+//                   <p>{props.description} </p>
+//               </div>
+//           </div>
+//           </div>
+//       </>
+//   )
+// }
 
 // import React from "react";
 // class App extends React.Component{
