@@ -19,7 +19,7 @@ let Navbar = () => {
                         
                     </ul>
                     <form className="form-inline my-2 my-lg-0 ">
-                        <input classNameName="form-control mr-sm-2 mt-5" type="search" placeholder="Search" aria-label="Search"/><br />
+                        <input className="form-control mr-sm-2 mt-5" type="search" placeholder="Search" aria-label="Search"/><br />
                         <button className="btn btn-outline-success" type="submit">Search</button>
                     </form>
                 </div>
