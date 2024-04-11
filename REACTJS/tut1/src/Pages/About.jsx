@@ -1,10 +1,11 @@
+import Footer from "../Components/Footer"
 import Navbar from "../Components/Navbar"
 
 let About = ()=>{
     return (
         <>
             <div className="container">
-                <Navbar/>
+           
                 {/* <ul>
                     <li><a href="/">Home</a></li>
                     <li><a href="/about">About us</a></li>
@@ -12,6 +13,7 @@ let About = ()=>{
                 </ul> */}
                 <h1>About Us</h1>
             </div>
+        
         </>
     )
 }

@@ -1,5 +1,6 @@
 import { useState } from "react"
 import Navbar from "../Components/Navbar"
+import Footer from "../Components/Footer"
 
 let Contact = ()=>{
     // let [name,setName]=useState('john')
@@ -36,7 +37,7 @@ let Contact = ()=>{
     return (
         <>
             <div className="container">
-                <Navbar/>   
+            
                 {/* <ul>
                     <li><a href="/">Home</a></li>
                     <li><a href="/about">About us</a></li>
@@ -64,6 +65,7 @@ let Contact = ()=>{
 
                 <p>{email}</p>
                 <p>{pass}</p>
+                
             </div>
         </>
     )

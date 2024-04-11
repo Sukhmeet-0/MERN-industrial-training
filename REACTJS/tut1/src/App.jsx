@@ -9,8 +9,8 @@ import Profile from './Pages/Admin/Profile';
 
 import ChangePassword from './Pages/Customeres/ChangePassword';
 import CustomerDashboard from './Pages/Customeres/Dashboard';
-
-
+import PublicLayout from './Layouts/PublicLayout';
+import Forms from './Pages/Forms';
 // import ComponentsB from "./ComponentsB";
 
 function App() {
@@ -44,10 +44,16 @@ function App() {
         <BrowserRouter>
         
           <Routes>
-            <Route path={'/'} element={<Home/>}/>
+            <Route path='/' element={<PublicLayout/>}>
+              <Route index element={<Home/>}/>
+              <Route path='about' element={<About/>}/>
+              <Route path='contact' element={<Contact/>}/>
+              <Route path='register' element={<Forms/>}/>
+            </Route>
+            {/* <Route path={'/'} element={<Home/>}/>
             <Route path={'/about'} element={<About/>}/>
             <Route path={'/contact'} element={<Contact/>}/>
-            <Route path={'*'} element={<PageNotFound/>}/>
+            <Route path={'*'} element={<PageNotFound/>}/> */}
             <Route path={'/admin'}>
               <Route path={'dashboard'} element={<Dashboard/>}/>
               <Route path={'profile'} element={<Profile/>}/>
