@@ -1,0 +1,5 @@
+show dbs
+show collections
+use dbsname
+db.staff.insertOne({name:'',age:'',email:''})
+db.staff.find()
