@@ -1,5 +1,12 @@
+---------------------------------------------------------------lec 1-----------------------------------------------------------------
 show dbs
 show collections
 use dbsname
 db.staff.insertOne({name:'',age:'',email:''})
 db.staff.find()
+
+-------------------------------------------------------------- lec 2------------------------------------------------------------------
+db.staff.insertMany([{},{},{}])
+db.staff.find({},{_id:0,name:1,age:1})
+db.staff.find({name:'sukhmeet singh'})
+db.staff.drop()
