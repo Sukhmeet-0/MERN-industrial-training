@@ -10,3 +10,11 @@ db.staff.insertMany([{},{},{}])
 db.staff.find({},{_id:0,name:1,age:1})
 db.staff.find({name:'sukhmeet singh'})
 db.staff.drop()
+----------------------------------------------------------------lec 3------------------------------------------------------------------
+db.staff.insertMany([{name:'sukhmeet',age:22,gender:'male'},{name:'harmeet',age:26,gender:'male'},{name:'gurmeet',age:52,gender:'male'}])
+db.staff.updateOne({name:'sukhmeet'},{$set:{name:'sukhmeet singh'}})
+db.staff.deleteOne({name:'harmeet'})
+db.staff.find({gender:'male'},{_id:0,name:1,age:1}).limit(2)
+db.staff.find().skip(1)
+db.staff.find().sort({name:1}) 1 for ascending  and -1 for descending
+
