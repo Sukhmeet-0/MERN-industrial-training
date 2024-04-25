@@ -21,6 +21,7 @@ async function addNewStaff(req,res){
         
         res.json({error:error,message:''})
     }
+    
 }
 
 module.exports = {
